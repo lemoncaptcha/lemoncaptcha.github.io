@@ -361,6 +361,7 @@ nav {
     grid-gap: 2rem;
     grid-template-columns: 1fr 75%;
     grid-template-areas: "image content";
+    padding-bottom: 7rem;
 }
 
 .section--testimony .section__heading {
@@ -382,4 +383,28 @@ nav {
 .section__subtitle {
     margin: 0;
     margin-bottom: 2.5rem;
+}
+
+/*  */
+/* Offer Section */
+/*  */
+
+.section--offer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5rem 15rem 0 15rem;
+    background-color: var(--color-dark-green);
+}
+
+.section--offer h3 {
+    color: var(--color-light-gray);
+}
+
+.section--offer h2 {
+    color:var(--color-white);
+}
+
+.section--offer p {
+    color:var(--color-white);
 }
