@@ -393,7 +393,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 5rem 15rem 0 15rem;
+    padding: 5rem 15rem 6rem 15rem;
     background-color: var(--color-dark-green);
 }
 
@@ -407,4 +407,17 @@ nav {
 
 .section--offer p {
     color:var(--color-white);
+}
+
+/*  */
+/* Footer */
+/*  */
+
+.footer__container {
+    background-color: var(--color-light-cream);
+    padding: 5rem 0 5rem 0;
+}
+
+.footer__container p {
+    font-size: 1.6rem;
 }
