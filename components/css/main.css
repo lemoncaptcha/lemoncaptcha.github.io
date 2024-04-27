@@ -12,9 +12,16 @@ html {
     --font-default-family: Arial, Helvetica, sans-serif;
   }
 
+  /* html {
+    background-color: #000;
+  } */
+
   body {
+    /* margin-top:; */
+    background-color: var(--color-black);
+    border-radius: 25px;
     margin: 0;
-    background-color: var(--color-light-cream);
+    margin-top: 2rem;
   }
 
 /*  */
@@ -43,14 +50,18 @@ h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: normal;
     text-transform:uppercase;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     color: var(--color-dark-grey);
+    margin:0;
 }
 
 h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    margin:0;
+    margin-bottom: 3rem;
 }
 
 em {
@@ -89,7 +100,7 @@ ul {
 .wordmark {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: lowercase;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: lighter;
     letter-spacing: 0.2px;
 }
@@ -166,7 +177,7 @@ a.circle--active{
 /*  */
 .post__container {
     width: 424px;
-    padding: 1rem;
+    padding: 1rem 1rem 3rem 1rem;
 }
 .post__title {
     margin: 0;
@@ -286,6 +297,7 @@ header {
     margin: 0 auto;
     padding: 2rem;
     background-color: var(--color-light-cream);
+    border-radius: 25px 25px 0 0;
 }
 
 .nav-list {
@@ -317,6 +329,7 @@ nav {
     ". header"
     "side-bar main"
     ;
+    background-color: var(--color-light-cream);
 }
 
 .section__heading {
@@ -332,8 +345,41 @@ nav {
 .section__main-content {
     grid-area: main;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .section__description .button-wrapper {
     padding:2rem 0 0 0;
+}
+
+/*  */
+/* TESTIMONY SECTION */
+/*  */
+
+.section--testimony {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 75%;
+    grid-template-areas: "image content";
+}
+
+.section--testimony .section__heading {
+    padding-bottom: 2.5rem;
+}
+
+.section__img {
+    border-radius: 25px;
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__img img {
+    border-radius: 25px;
+}
+
+.section__subtitle {
+    margin: 0;
+    margin-bottom: 2.5rem;
 }
