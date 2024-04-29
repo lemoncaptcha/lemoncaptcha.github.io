@@ -11,14 +11,20 @@
             <h1 class="wordmark"><em>Holy</em>Studio</h1>
             <nav>
                 <ul class="nav-list">
-                    <li><a class="nav" href="#!">Offer</a></li>
-                    <li><a class="nav" href="#!">Portfolio</a></li>
-                    <li><a class="nav" href="#!">About us</a></li>
-                    <li><a class="nav" href="#!">Guides</a></li>
+                    <li><a class="nav" href="#!"><div class="nav__name">Offer</div></a></li>
+                    <li><a class="nav" href="#!"><div class="nav__name">Portfolio</div></a></li>
+                    <li class="dropdown">
+                        <a class="nav dropdown-button" href="#!">About us <i class="fa-solid fa-angle-down about-us-arrow"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#!"><div class="dropdown-content__name">About us</div></a>
+                            <a href="#!"><div class="dropdown-content__name">FAQ</div></a>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="#!"><div class="nav__name">Guides</div></a></li>
                 </ul>
                 <div class="button-wrapper">
                     <a class="button" href="#!">Contact</a>
-                    <a class="button button--outline-light" href="#!">EN</a>
+                    <a class="button button--outline-light" href="#!">EN <i class="fa-solid fa-angle-down about-us-arrow"></i></a>
                 </div>
             </nav>
         </header>
@@ -31,17 +37,17 @@
             </div>
 
             <div class="section__main-content">
-                <div class="post__container post__container--half">
+                <div class="post__container post__container--half post--zojo">
                     <img class="post__img" src="http://via.placeholder.com/424x537" alt="img placeholder">
                     <h2 class="post__title">Zojo Elixirs</h2>
                     <p class="post__description">Supplement packaging reimagined – adding elegance to wellness</p>
                 </div>
-                <div class="post__container post__container--half">
+                <div class="post__container post__container--half post--goodsheet">
                     <img class="post__img" src="http://via.placeholder.com/424x537" alt="img placeholder">
                     <h2 class="post__title">Good Sheet</h2>
                     <p class="post__description">A user-friendly app designed to simplify finance management for entrepreneurs</p>
                 </div>
-                <div class="post__container post__container--full">
+                <div class="post__container post__container--full post--moonholi">
                     <img class="post__img" src="http://via.placeholder.com/876x535" alt="img placeholder">
                     <h2 class="post__title">Moonholi</h2>
                     <p class="post__description">Enhancing yoga routines with uniquely illustrated mats, loved worldwide</p>
@@ -52,13 +58,15 @@
 
         <section class="section section--testimony">
                 <div class="section__img"><img src="http://via.placeholder.com/279x229" alt="img placeholder"></div>            <div class="section__testimony-wrapper">
-                <h3 class="section__heading">Testimonials</h3>
-                <h4>Without any doubt, we entrust Holy with our following projects and full decision-making authority over their direction.</h4>
-                <p class="section__subtitle">Marta Ravensdale, Mobipol</p>
-                <div class="slide-show-icon-container">
-                    <a href="#!"><i class="fa-solid fa-circle "></i></a>
-                    <a class="circle--active" href="#!"><i class="fa-solid fa-circle"></i></a>
-                    <a href="#!"><i class="fa-solid fa-circle"></i></a>
+                <div class="section__content">
+                    <h3 class="section__heading">Testimonials</h3>
+                    <h4>Without any doubt, we entrust Holy with our following projects and full decision-making authority over their direction.</h4>
+                    <p class="section__subtitle">Marta Ravensdale, Mobipol</p>
+                    <div class="slide-show-icon-container">
+                        <a href="#!"><i class="fa-solid fa-circle "></i></a>
+                        <a class="circle--active" href="#!"><i class="fa-solid fa-circle"></i></a>
+                        <a href="#!"><i class="fa-solid fa-circle"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
